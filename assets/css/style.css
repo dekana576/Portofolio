@@ -1159,6 +1159,22 @@ section .container {
   background: #15bb62;
 }
 
+/* Mengatur ukuran gambar di dalam portfolio details swiper */
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* gambar tidak terpotong */
+  max-height: 450px;   /* kamu bisa ubah sesuai kebutuhan */
+}
+
+/* Jika ingin slider lebih rapi di layar besar */
+@media (min-width: 992px) {
+  .portfolio-details .portfolio-details-slider img {
+    max-height: 500px; 
+  }
+}
+
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
